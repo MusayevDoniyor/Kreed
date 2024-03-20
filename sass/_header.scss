@@ -1,0 +1,122 @@
+// * Header start
+
+
+header {
+    width: 100%;
+    height: 125vh;
+    display: flex;
+    justify-content: center;
+}
+
+.headerTitle {
+    width: 85%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    background-color: $primaryColor;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        width: auto;
+        height: 100%;
+        display: flex;
+
+        li {
+            padding: 0 30px;
+            @include textStyle1;
+
+            a:hover {
+                color: white;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+            }
+        }
+    }
+}
+
+
+.button a {
+    background-color: $primaryColor;
+    border: 1px solid rgba(19, 57, 13, 1);
+    @include textStyle1;
+    border-radius: 4px;
+    padding: 11px 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.button a::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 57, 13, 0.3);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.button a:hover {
+    color: #fff;
+}
+
+
+// ! Header Main
+.headerMain {
+    width: 87%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.leftDiv {
+    width: 500px;
+    height: 332px;
+
+    h1 {
+        width: 114%;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 82.2px;
+    }
+
+    p {
+        width: 114%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20.08px;
+    }
+}
+
+
+.rightDiv {
+    margin-top: -60px;
+
+    img {
+        margin-left: 25px;
+    }
+}
+
+// * Header end
